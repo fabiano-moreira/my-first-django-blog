@@ -14,26 +14,15 @@
         <h1><a href="/">Blog de Django</a></h1>
     </div>
 
+    {% for post in posts %}
     <div>
-        <p>Hi there!</p>
-        <p>It's alive!!!</p>
-        <p>publicado em 24/11/2019, 17:40h</p>
-        <h2><a href="">Meu primeiro post</a></h2>
-        <p>Que Minas não tem mar todo mundo sabe, mas com um pouquinho de
-            criatividade é possível encontrar opções para refrescar-se e fugir do calor,
-            sem sair do Estado. Além das “praias de mineiro” encontradas em diferentes localidades,
-            também podemos achar entre as montanhas e, ao redor da capital, diversas cachoeiras.
-        </p>
+        <p>published: {{ post.published_date}} </p>
+        <h2><a href=""> {{ post.title }} </a></h2>
+        <p> {{ post.text|linebreaksbr }} </p>
     </div>
-
-    <div>
-        <p>publicado: 24/11/2019, 17:50h</p>
-        <h2><a href="">Segundo post</a></h2>
-        <p>Churrasco é o nome dado ao prato feito a base de carne in natura ou processada,
-            assada sobre fogo ou brasas, com a utilização de estacas de madeira ou metal
-            (chamados de espetos), ou de grelhas.
-        </p>
-    </div>
+    
+    {% endfor %}
+        
 </body>
 
 </html>
