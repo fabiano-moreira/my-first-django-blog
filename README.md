@@ -2,6 +2,7 @@
 
 Projeto de blog em Django.
 
+Feito o deploy no site PythonAnywhere o [Django Blog](http://fmoreiralves.pythonanywhere.com/)
 
 Feito com base no tutorial do [Django Girls](https://tutorial.djangogirls.org/pt/)
 
